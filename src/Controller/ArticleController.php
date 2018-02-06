@@ -14,7 +14,7 @@ class ArticleController extends AbstractController {
   }
   
   /**
-   * @Route("/news/{slug}")
+   * @Route("/news/{slug}", name="article_show")
    */
   public function show($slug) {
     $comments = [
