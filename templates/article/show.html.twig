@@ -101,5 +101,7 @@
 {% endblock %}
 
 {% block javascripts %}
+  {{ parent() }}
+  
   <script type="text/javascript" src="{{ asset('js/article_show.js') }}"></script>
 {% endblock %}
