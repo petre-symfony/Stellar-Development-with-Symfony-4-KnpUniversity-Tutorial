@@ -31,7 +31,8 @@ class ArticleController extends AbstractController {
   }
   
   /**
-   * @Route("/news/{slug}/heart", name="article_toggle_heart")
+   * @Route("/news/{slug}/heart", name="article_toggle_heart", methods={"POST"})
+   * 
    */ 
   public function toggleArticleHeart($slug){
     //TODO - actually heart/unheart the article
